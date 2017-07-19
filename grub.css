@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400');
+.container{
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.showcaseimg{
+  height: 100%;
+  background-image: url('mountain.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.showcase{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  height:30rem;
+}
+.showcasetext{
+  padding-top: 8rem;
+}
+.showcase h1{
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+p{
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+hr{
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+.showcasemini{
+  height: 20rem !important;
+}
+
+.showcasemini h2{
+  padding-top: 5rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
+.menu {
+    position: fixed;
+    left: -200px;
+    width: 260px;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+    text-align: left;
+}
+.menu.menu-open {
+    left: 0;
+}
+.menu-wrap {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    background: #1a1a1a;
+    width: 200px;
+    height: 100%}
+.menu h1.logo a {
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: .15em;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+}
+.menu h1.logo a:hover {
+    color: #1abc9c;
+}
+.menu img.logo {
+    margin: 20px 0;
+    max-width: 160px;
+}
+.menu a {
+    margin-left: 20px;
+    color: gray;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.menu a:hover {
+    color: #fff;
+}
+.menu a:active {
+    color: #fff;
+}
+.menu a>i {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 25px;
+    font-size: 14px;
+    line-height: 40px;
+    margin: 25px 2px;
+}
+.menu-close {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    font-size: 14px;
+    color: gray;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 20px;
+    left: 5px;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.menu-close:hover {
+    color: #fff;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+.body-push {
+    overflow-x: hidden;
+    position: relative;
+    right: 0;
+}
+.body-push-toright {
+    right: 200px;
+}
+.body-push-toleft {
+    right: -200px;
+}
+.menu, .body-push {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+#menuToggle {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 11;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, .25);
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+#menuToggle:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, .2);
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
