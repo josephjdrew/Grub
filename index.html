@@ -6,15 +6,38 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/grub.css"><link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
   </head>
   <body>
     <div class="container" style="overflow-x: hidden;">
 
+<!--Video Modal -->
+<div class="modal fade" id="video" tabindex="-1" role"dialog" >
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Grub Teaser</h5>
+          <button type="button" class="close" data-dismiss="modal">
+            <span>&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe width="100%" height="720" src="https://www.youtube.com/embed/e-GYrbecb88" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Nav Bar -->
+
     <nav class="menu" id="theMenu">
   <div class="menu-wrap">
-    <h1 class="logo"><a href="index.html#home">GRUB</a></h1>
+    <h1 class="logo"><a href="index.html">Grub</a></h1>
     <a href="index.html">Home</a>
-    <a href="services.html">Reviews</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#reviews">Reviews</a>
+
   </div>
 
   <!-- Menu button -->
@@ -26,24 +49,24 @@
     <div class="jumbotron showcase">
       <div class="row" style="">
         <div class="col-lg-6 showcasetop">
-          <h1 class="text-center">grub.</h1>
-          <p class="text-center">food that doesn't break the bank.</p>
+          <h1 class="text-center">Grub</h1>
+          <p class="text-center">Sydney's best budget food</p>
           <div class="text-center">
           <btn class="text-center btn btn-outline-secondary">SEE MORE</btn>
         </div>
         </div>
-        <div class="col-lg-6 showcaseimg">
+        <div class="col-lg-6 showcaseimg" style="background-image: url('img/crabs.jpg') !important;">
         </div>
       </div>
     </div>
 
     <div class="jumbotron showcasemini showcase">
       <div class="row" style="height:100%">
-        <div class="col-lg-4 showcaseimg">
+        <div class="col-lg-4 showcaseimg" style="background-image: url('img/salad.jpg') !important;">
         </div>
         <div class="col-lg-8 showcasetext">
-          <h2 class="text-center">popina</h2>
-          <p class="text-center">pizza by the quay.</p>
+          <h2 class="text-center">Banana Blossum</h2>
+          <p class="text-center">A fresh and revitalising lunch</p>
           <div class="text-center">
           <btn class="text-center btn btn-outline-primary">READ MORE</btn>
         </div>
@@ -51,18 +74,24 @@
       </div>
     </div>
 
-    <aside class="about">
-      <div class="row">
-        <div class="col-lg-4">
-        </div>
+    <div class="jumbotron showcasemini showcase">
+      <div class="row" style="height:100%">
+        <div class="col-lg-12 showcaseimg" style="background-image: url('img/pizza2.jpg') !important;">
+          <div class="row" style="height:100%;">
             <div class="col-lg-4">
-            <hr>
-    <h1 class="pagination-centered">What's Featured?</h1>
-    <p>We've got you covered. Here are our top picks for the best eateries near you </p>
-    <hr>
+            </div>
+            <div class="col-lg-4">
+              <div class="text-white">
+              <h2 class="text-center">What is the Grub Project?</h2>
+              <p class="text-center">Watch a short teaser of what we do.</p>
+              <div class="text-center">
+              <btn class="text-center btn btn-primary" data-toggle="modal" data-target="#video"><span class="fa fa-play"></span></btn>
+</div>
+</div>
+</div>
+        </div>
     </div>
-    </div>
-    </aside>
+
 
   </div>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
