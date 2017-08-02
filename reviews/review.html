@@ -10,10 +10,10 @@
       <link rel="stylesheet" href="../css/black.css">
 
   <!--Grub CSS by me -->
-  <link rel="stylesheet" href="../css/grub4.css">
+  <link rel="stylesheet" href="../css/grub.css">
 
 <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
 
 
 
@@ -35,52 +35,24 @@
 
 
 
-<div style="overflow-x:hidden;">
-
-
-  <a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="fa fa-bars button-dark"></i></a>
- <nav id="sidebar-wrapper" style="overflow-x:hidden;">
-     <ul class="sidebar-nav">
-         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-         <li class="sidebar-brand">
-             <a href="#top" onclick=$("#menu-close").click();>the grub project.</a>
-         </li>
-         <li>
-             <a href="#top" onclick=$("#menu-close").click();>grub</a>
-         </li>
-         <li>
-             <a href="#reviews" onclick=$("#menu-close").click();>reviews</a>
-         </li>
-         <li>
-             <a href="#portfolio" onclick=$("#menu-close").click();></a>
-         </li>
-     </ul>
- </nav>
+   <div class="container" style="overflow-x: hidden;">
 
 
 
+  <!--Nav Bar -->
 
-<!--
-    <div class="collapse" id="exCollapsingNavbar">
-      <div class="bg-default p-1">
-      <!--  <h4>Dummy</h4>
-        <span class="text-muted">Dummy</span> -->
+    <nav class="menu" id="theMenu">
+  <div class="menu-wrap">
+    <h1 class="logo"><a href="index.html">Grub</a></h1>
+    <a href="../index.html">Home</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#reviews">Reviews</a>
 
-      <!--
-        <nav class="nav nav-inline nav-white">
-          <a class="nav-link active" href="#">Test</a>
+  </div>
 
-        </nav>
-      </div>
-    </div>
-
--->
-
-
-
+  <!-- Menu button -->
+  <div id="menuToggle"><i class="fa fa-bars"></i></div>
 </nav>
-
-
 
 
 
@@ -126,43 +98,13 @@ Ut vitae finibus urna. Cras fermentum rutrum mi ac interdum. Vestibulum nec puru
 </div>
 
 
-  <script>
-// Sidenav
-$("#menu-close").click(function(e) {
-  e.preventDefault();
-  $("#sidebar-wrapper").toggleClass("active");
-});
-// Opens the sidebar menu
-$("#menu-toggle").click(function(e) {
-  e.preventDefault();
-  $("#sidebar-wrapper").toggleClass("active");
-});
 
-  </script>
-
-  <script>
-  var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-  if(w <= 768){
-  var scrolldyn=500;
-  }
-  if(w >= 767){
-    var scrolldyn=400;
-  }
-  //var scrolldyn = 500;
-  $(window).scroll(function() {
-
-
-
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= scrolldyn) {
-        $(".fa-bars").removeClass("button-dark");
-    }
-
-    if (scroll <= scrolldyn) {
-      $(".fa-bars").addClass("button-dark");
-}
+</body>
+<script>
+$('#menuToggle, .menu-close').on('click', function(){
+$('#menuToggle').toggleClass('active');
+$('body').toggleClass('body-push-toleft');
+$('#theMenu').toggleClass('menu-open');
 });
 </script>
-</body>
 </html>
