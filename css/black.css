@@ -1,0 +1,9 @@
+html {
+  background-color: black !important;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
