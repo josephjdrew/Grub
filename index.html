@@ -52,7 +52,7 @@
           <h1 class="text-center">Grub</h1>
           <p class="text-center">Sydney's best budget food</p>
           <div class="text-center">
-          <btn class="text-center btn btn-outline-secondary">SEE MORE</btn>
+          <a href="#reviews" class="text-center btn btn-outline-secondary">SEE MORE</a>
         </div>
         </div>
 
@@ -63,9 +63,21 @@
 
     <div class="jumbotron showcasemini showcase">
       <div class="row" style="height:100%">
-        <div class="col-lg-5 showcaseimg" style="background-image: url('img/salad.jpg') !important;">
-        </div>
-        <div class="col-lg-7 showcasetext">
+        <div class="col-lg-5 col-md-6 showcaseimg" style="background-image: url('img/salad.jpg') !important;">
+          <div class="cardui" style="display: none;">
+        <div class="card-overlay"></div>
+            <div class="card-content">
+           <h2 class="text-center">Banana Blossum</h2>
+              <p class="text-center"><span class="badge badge-primary" style="margin-right: 15px;"><span class="fa fa-clock-o"></span> New</span>A fresh and revitalising lunch</p>
+              <div class="text-center">
+              <a href="reviews/bananablossum.html" class="text-center btn btn-primary">READ MORE</a>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+        <div class="col-lg-7 col-md-6 hidden-sm-down showcasetext">
        <h2 class="text-center">Banana Blossum</h2>
           <p class="text-center"><span class="badge badge-primary" style="margin-right: 15px;"><span class="fa fa-clock-o"></span> New</span>A fresh and revitalising lunch</p>
           <div class="text-center">
@@ -81,7 +93,7 @@
           <div class="row" style="height:100%;">
             <div class="col-lg-4">
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 inner-box">
               <div class="text-white">
               <h2 class="text-center">What is the Grub Project?</h2>
               <p class="text-center">Watch a short teaser of what we do.</p>
@@ -95,24 +107,25 @@
 </div>
 </div>
 
-<div class="jumbotron showcasemini showcase">
+<div class="jumbotron showcasemini showcase" id="reviews">
   <div class="row" style="height:100%">
-    <div class="col-lg-7 showcasetext">
+    <div class="col-lg-7 col-md-6 hidden-sm-down showcasetext">
       <h2 class="text-center">Popina</h2>
       <p class="text-center">Budget by the quay</p>
       <div class="text-center">
         <a href="reviews/popina.html" class="text-center btn btn-outline-success">READ MORE</a>
     </div>
     </div>
-    <div class="col-lg-5 showcaseimg" style="background-image: url('img/pizza.jpg') !important;">
+    <div class="col-lg-5 col-md-6 showcaseimg" style="background-image: url('img/pizza.jpg') !important;">
     </div>
   </div>
 </div>
+<hr class="hidden-sm-down">
 <div class="jumbotron showcasemini showcase">
   <div class="row" style="height:100%">
-    <div class="col-lg-5 showcaseimg" style="background-image: url('img/sauces.jpg') !important;">
+    <div class="col-lg-5 col-md-6 showcaseimg" style="background-image: url('img/sauces.jpg') !important;">
     </div>
-    <div class="col-lg-7 showcasetext">
+    <div class="col-lg-7 col-md-6 hidden-sm-down showcasetext">
       <h2 class="text-center">Green Leaf</h2>
       <p class="text-center">Cabramatta's finest</p>
       <div class="text-center">
@@ -122,16 +135,17 @@
 
   </div>
 </div>
+<hr class="hidden-sm-down">
 <div class="jumbotron showcasemini showcase">
   <div class="row" style="height:100%">
-    <div class="col-lg-7 showcasetext">
+    <div class="col-lg-7 col-md-6 hidden-sm-down showcasetext">
       <h2 class="text-center">A Touch of Europe</h2>
       <p class="text-center">Deserts galore</p>
       <div class="text-center">
-        <a href="reviews/touchofeurope.html" class="text-center btn btn-outline-primary">READ MORE</a>
+        <a href="reviews/touchofeurope.html" class="text-center btn btn-outline-warning">READ MORE</a>
     </div>
     </div>
-    <div class="col-lg-5 showcaseimg" style="background-image: url('img/cheesecake.jpg') !important;">
+    <div class="col-lg-5 col-md-6 showcaseimg" style="background-image: url('img/cheesecake.jpg') !important;">
     </div>
   </div>
 </div>
@@ -141,10 +155,25 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
   <script>
+  //CHANCE MENU CLASSES
   $('#menuToggle, .menu-close').on('click', function(){
   $('#menuToggle').toggleClass('active');
   $('body').toggleClass('body-push-toleft');
   $('#theMenu').toggleClass('menu-open');
+});
+
+//RESPONSIVE ASSISTANCE
+function width() {
+if (screen.width<=768){
+  $('.cardui').css("display", "inline");
+};
+if (screen.width>768){
+  $('.cardui').css("display", "none");
+};
+};
+width();
+$(window).resize(function() {
+width();
 });
 </script>
 </html>
