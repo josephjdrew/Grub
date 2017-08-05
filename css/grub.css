@@ -62,7 +62,7 @@ hr{
 .showcasetop{
   color: white;
   border-radius: 0;
-  background: linear-gradient(225deg, #d82e3b, #EF6627, #d82e3b); /*EF4027*/
+  background: linear-gradient(225deg, #EB3349, #F45C43); /*EF4027*/
   background-size: 600% 600%;
   animation: gradientmove 30s ease infinite;
   border: 0 !important;
